@@ -1,7 +1,6 @@
 import Login from "../pageobjectmodel/Loginpage.js";
 describe('Select Lowest Price Item and Add to Cart', () => {
   let ln; // Declare the 'ln' variable at the suite level to make it accessible to all test cases.
-//  -- let mn; // Declare the 'mn' variable for the 'Single' instance.
   let data; // Declare the 'data' variable for fixture data.
 
   before(() => {
@@ -9,7 +8,6 @@ describe('Select Lowest Price Item and Add to Cart', () => {
     cy.fixture('configdts').then((fixtureData) => {
       data = fixtureData;
       ln = new Login();
-      // mn = new Single(); // Create an instance of the 'Single' class
       cy.visit(data.url);
       ln.setUserName(data.username);
       ln.setPassword(data.password);
@@ -18,8 +16,8 @@ describe('Select Lowest Price Item and Add to Cart', () => {
     });
   });
 
-  it('Confirm the lowest price in the storet', () => {
-    // Test case 1: Access the 'ln' instance to perform test actions.
+  it('Confirmthe lowest price in the storet', () => {
+    
     ln.featchtheitemname_price();
     // Test the item product view: 
     ln.Click_AddtoCart_button_ofthe_lowestpriceitem(data.lowestpriceitem);
