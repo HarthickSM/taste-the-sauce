@@ -1,4 +1,4 @@
-import Login from "../pageobjectmodel/Loginpage.js";
+import Login from "../../pageobjectmodel/Loginpage.js";
 describe('Select Lowest Price Item and Add to Cart', () => {
   let ln; // Declare the 'ln' variable at the suite level to make it accessible to all test cases.
   let data; // Declare the 'data' variable for fixture data.
