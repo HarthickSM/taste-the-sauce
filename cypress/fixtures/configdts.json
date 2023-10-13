@@ -1,0 +1,10 @@
+{
+ "url": "https://www.saucedemo.com",
+ "username": "standard_user",
+ "password": "secret_sauce",
+ "expected": "Products",
+ "firstname": "Harthick",
+ "lastname": "S.M.",
+ "pincode": "560021",
+ "lowestpriceitem": "$7.99"
+}
