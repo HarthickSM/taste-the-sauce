@@ -19,7 +19,7 @@ describe('Select Lowest Price Item and Add to Cart', () => {
   it('Confirmthe lowest price in the storet', () => {
     
     ln.featchtheitemname_price();
-    // Test the item product view: 
+    // Test the item product view:  
     ln.Click_AddtoCart_button_ofthe_lowestpriceitem(data.lowestpriceitem);
     ln.cnftheqtytotwo();
     ln.checkverifythe_items(data.firstname, data.lastname, data.pincode);
